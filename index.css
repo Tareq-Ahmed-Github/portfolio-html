@@ -4,7 +4,7 @@ body{
     margin: 0px;
 }
 #header{
-    /* background-color: #1A5276; */
+    background-color: #1A5276;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -35,15 +35,11 @@ body{
 
 }
 .menu:hover{
-    background-color: aquamarine;
+    text-decoration:underline cyan;
     transition: .2s ease-in;
     color: black;
 }
 
-.banner-img{
-    border-right: solid rgb(28, 158, 91);
-
-}
 .banner img{
     border-radius: 500px;
 }
