@@ -12,33 +12,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+        integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
+
 </head>
 
-<body class="dark:bg-slate-800 dark:text-white">
-    <div id="main-div">
-        <div id="header" class="bg-cyan-700">
+<body class="dark:bg-slate-800 dark:text-white m-0">
 
-            <a href="#main-div" class="name">Tareq</a>
-            <div class="menu-box">
-                <a href="" class="menu">About</a>
-                <a href="./contact.html" class="menu">Contact</a>
-                <a href="" class="menu">Services</a>
-            </div>
+    <!-- navbar  -->
 
+    <div id="header" class="bg-cyan-700">
+
+        <a href="#main-div" class="name">Tareq</a>
+        <div class="menu-box">
+            <a href="" class="menu">About</a>
+            <a href="#contact" class="menu">Contact</a>
+            <a href="" class="menu">Services</a>
         </div>
+
+    </div>
+
+    <!-- banner  -->
+
+    <div id="main-div">
 
         <div class="banner grid grid-cols-2 m-5">
             <div class="banner-img flex align-center justify-center mt-20">
                 <img src="https://i.ibb.co/dGTRjpx/IMG-20200705-192005-744.jpg" alt="" class="h-80">
             </div>
             <div class="pl-2 flex flex-col justify-center align-center">
-                <h1 class="text-lime-500 text-2xl font-bold">TAREQ AHMED</h1>
+                <h1 class="text-lime-500 text-2xl font-bold animate-bounce">TAREQ AHMED</h1>
                 <h1 class="text-sm mb-2">Software developer.</h1>
-                <p>I have experience working with development tools both frontend and backend. I also create ui/ux on figma.
+                <p>I have experience working with development tools both frontend and backend. I also create ui/ux on
+                    figma.
                 </p>
             </div>
         </div>
+
+
+        <!-- skills  -->
 
         <h1 class="ml-20 mt-20 text-2xl text-green-500">My Skills</h1>
 
@@ -94,29 +110,114 @@
 
         </div>
 
+        <!-- carousel  -->
+
+        <h1 class="ml-40 mt-20 text-2xl text-green-500">Services</h1>
+
+        <div id="controls-carousel" class="relative mx-40" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+                    data-carousel-item="">
+                    <img src="https://i.ibb.co/NLXWpG1/tareq-ahmed.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                    data-carousel-item="active">
+                    <img src="https://i.ibb.co/ggkhFXP/1.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev="">
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next="">
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+
+
+        <!-- contact page  -->
+
+        <div id="contact" class="flex justify-center align-center m-20">
+            <div class="container grid grid-cols-2 m-20 w-3/5">
+                <div class="pl-2">
+                    <h1 class="mb-4 text-2xl font-bold">Contact</h1>
+                    <p>1st floor, Police Plaza, Dhaka-1100</p>
+                    <div class="mt-4">
+                        <p>Mob: 0173*****67</p>
+                        <p>Email: tareqrobin57@gmail.com</p>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa fa-facebook-official hover:text-black text-2xl" aria-hidden="true"></i></a>
+                        <a href="https://github.com/tareqs-git" target="_blank">
+                            <i class="fa fa-github hover:text-black text-2xl" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank">
+                            <i class="fa fa-linkedin-square hover:text-black text-2xl" aria-hidden="true"></i></a>
+
+                        <div class="mt-4">
+                            <p>Monday-Saturday: 10:00AM-6:00PM</p>
+                            <p>Sunday: 10:00AM-2:00PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 w-80 pl-2">
+                    <input type="text" placeholder="Name" class="border-b-2 border-black bg-slate-800 h-12">
+                    <input type="text" placeholder="Email" class="border-b-2 border-black bg-slate-800 h-12">
+                    <input type="textarea" placeholder="Message" class="border-b-2 border-black bg-slate-800 h-12">
+                    <button class=" bg-green-500 rounded-sm hover:bg-green-700">SEND</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer  -->
+
         <footer class="grid grid-cols-2 mt-20 bg-cyan-700 h-60">
             <div class=" p-10 grid grid-cols-1 border-r-2 border-green-500 my-4 justify-items-end">
-                <a href="./contact.html" class="">Contact</a>  
-                <a href="" class="">About</a>  
-                <a href="" class="">Service</a>  
+                <a href="./contact.html" class="hover:animate-bounce">Contact</a>
+                <a href="" class="hover:animate-bounce">About</a>
+                <a href="" class="hover:animate-bounce">Service</a>
             </div>
             <div class="p-10 grid grid-cols-1 w-4">
                 <a href="https://www.facebook.com/" target="_blank">
-                <i class="fa fa-facebook-official hover:text-black text-2xl" aria-hidden="true"></i></a>
+                    <i class="fa fa-facebook-official hover:text-black text-2xl" aria-hidden="true"></i></a>
                 <a href="https://www.instagram.com/tareqrobin57/" target="_blank">
-                <i class="fa fa-instagram hover:text-black text-2xl" aria-hidden="true"></i></a>
+                    <i class="fa fa-instagram hover:text-black text-2xl" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/feed/" target="_blank">
-                <i class="fa fa-linkedin-square hover:text-black text-2xl" aria-hidden="true"></i></a>
+                    <i class="fa fa-linkedin-square hover:text-black text-2xl" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/home" target="_blank">
-                <i class="fa fa-twitter-square hover:text-black text-2xl" aria-hidden="true"></i></a>
+                    <i class="fa fa-twitter-square hover:text-black text-2xl" aria-hidden="true"></i></a>
                 <a href="https://github.com/tareqs-git" target="_blank">
-                <i class="fa fa-github hover:text-black text-2xl" aria-hidden="true"></i></a>
+                    <i class="fa fa-github hover:text-black text-2xl" aria-hidden="true"></i></a>
 
             </div>
+
         </footer>
     </div>
 
 
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
 </body>
 
 </html>
